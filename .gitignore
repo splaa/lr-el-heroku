@@ -12,4 +12,6 @@ npm-debug.log
 yarn-error.log
 .env
 
+database/database.sqlite
+heroku_add_env.sh
 .idea
