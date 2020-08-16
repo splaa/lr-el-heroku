@@ -17,5 +17,9 @@
         "laravel-mix": "^2.0",
         "lodash": "^4.17.19",
         "popper.js": "^1.12"
+    },
+    "dependencies": {
+        "laravel-echo": "^1.8.1",
+        "socket.io-client": "^2.3.0"
     }
 }
