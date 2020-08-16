@@ -78,11 +78,10 @@
         </div>
     </nav>
 </header>
-<div id="app">
-    <chat-component></chat-component>
-</div>
+
 <main class="app-content py-3">
     <div class="container">
+
         @include('flash::message')
         @section('breadcrumbs', Breadcrumbs::render())
         @yield('breadcrumbs')
@@ -102,9 +101,9 @@
         </div>
     </div>
 </footer>
-{{--<script>--}}
-{{--    $('#flash-overlay-modal').modal();--}}
-{{--</script>--}}
+<script>
+    $('#flash-overlay-modal').modal();
+</script>
 
 <!-- Scripts -->
 <script src="{{ mix('js/app.js', 'build') }}" defer></script>

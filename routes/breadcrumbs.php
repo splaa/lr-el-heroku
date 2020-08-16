@@ -12,6 +12,9 @@ use App\Http\Router\AdvertsPath;
 use App\Http\Router\PagePath;
 use DaveJamesMiller\Breadcrumbs\BreadcrumbsGenerator as Crumbs;
 
+Breadcrumbs::register('chat', function (Crumbs $crumbs) {
+    $crumbs->push('Chat', route('chat'));
+});
 Breadcrumbs::register('home', function (Crumbs $crumbs) {
     $crumbs->push('Home', route('home'));
 });
