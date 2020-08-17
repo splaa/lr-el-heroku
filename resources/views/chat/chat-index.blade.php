@@ -1,6 +1,6 @@
-@extends('layouts.chat')
+@extends('layouts.app')
 
-
+{{-- Todo Bootstrap - Dropdown (выпадающий список) https://itchief.ru/lessons/bootstrap-3/98-bootstrap-3-dropdown-lists--}}
 @section('content')
     <div class="card-body">
         @if (session('status'))
@@ -14,5 +14,8 @@
     <div id="app">
 
         <chat-component></chat-component>
+
+
+
     </div>
 @endsection

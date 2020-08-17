@@ -15,3 +15,5 @@ yarn-error.log
 database/database.sqlite
 heroku_add_env.sh
 .idea
+
+resources/views/test.blade.php
