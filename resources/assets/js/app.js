@@ -7,3 +7,12 @@
 
 require('./bootstrap');
 require('./custom');
+
+window.Vue = require('vue');
+
+Vue.component('chat-component',
+    require('./components/ChatComponent'));
+
+const app = new Vue({
+    el: '#app'
+});

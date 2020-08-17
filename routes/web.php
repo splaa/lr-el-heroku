@@ -20,3 +20,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/cabinet', 'Cabinet\HomeController@index')->name('cabinet');
+Route::view('/chat', 'chat.chat-index')->name('chat');
