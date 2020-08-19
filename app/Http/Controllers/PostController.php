@@ -10,7 +10,7 @@ class PostController extends Controller
     //Todo ОБРАБОТКА HTTP-ЗАПРОСОВ В ПРИЛОЖЕНИИ LARAVEL VUE.JS С ПОМОЩЬЮ AXIOS https://pusher.com/tutorials/laravel-vue-axios
     public function index()
     {
-        return view('posts');
+        return view('posts.index');
     }
 
     public function get(Request $request)
