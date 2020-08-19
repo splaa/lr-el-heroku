@@ -11,8 +11,8 @@ require('./custom');
 
 window.Vue = require('vue');
 
-Vue.component('chat-component',
-    require('./components/ChatComponent'));
+import ChatComponent from "./components/ChatComponent";
+Vue.component('chat-component',ChatComponent);
 
 const app = new Vue({
     el: '#app'
