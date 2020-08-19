@@ -6,12 +6,15 @@
  */
 
 require('./bootstrap');
+
 require('./custom');
 
 window.Vue = require('vue');
 
-Vue.component('chat-component',
-    require('./components/ChatComponent'));
+import ChatComponent from "./components/ChatComponent";
+import LaravelUpdate from "./components/LaravelUpdate";
+Vue.component('chat-component',ChatComponent);
+Vue.component( 'laravel-update',LaravelUpdate);
 
 const app = new Vue({
     el: '#app'
