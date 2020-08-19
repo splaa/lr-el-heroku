@@ -17,3 +17,4 @@ heroku_add_env.sh
 .idea
 
 resources/views/test.blade.php
+yarn.lock
