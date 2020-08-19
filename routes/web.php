@@ -37,7 +37,7 @@ Route::post(
 );
 
 //Post
-Route::get('/','PostController@index');
+Route::get('/posts','PostController@index');
 
 
 // Для пробных испытаний
