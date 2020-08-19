@@ -12,7 +12,9 @@ require('./custom');
 window.Vue = require('vue');
 
 import ChatComponent from "./components/ChatComponent";
+import LaravelUpdate from "./components/LaravelUpdate";
 Vue.component('chat-component',ChatComponent);
+Vue.component( 'laravel-update',LaravelUpdate);
 
 const app = new Vue({
     el: '#app'

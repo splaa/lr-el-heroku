@@ -14,6 +14,7 @@
     <div id="app">
 
         <chat-component></chat-component>
+        <laravel-update/>
 
 
 
