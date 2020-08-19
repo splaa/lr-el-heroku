@@ -8,8 +8,6 @@
                 {{ session('status') }}
             </div>
         @endif
-
-      Вы вошли в систему!
     </div>
     <div id="app">
 
