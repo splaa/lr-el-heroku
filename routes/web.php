@@ -11,6 +11,8 @@
 |
 */
 
+use App\Http\Controllers\PostController;
+
 Route::get('/', static function () {
 
     return redirect(route('home'));
@@ -20,8 +22,22 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/cabinet', 'Cabinet\HomeController@index')->name('cabinet');
+
+//Chat
 Route::view('/chat', 'chat.chat-index')->name('chat');
 
+//Todo: Переписать код маршрута '/messages' в Chat/MessageController
+Route::post(
+    '/messages',
+    function (\Illuminate\Http\Request $request) {
+
+//        \App\Events\Message::dispatch($request->input('body'));
+        \App\Events\Message::dispatch($request->all('body'));
+    }
+);
+
+//Post
+Route::get('/','PostController@index');
 
 
 // Для пробных испытаний
