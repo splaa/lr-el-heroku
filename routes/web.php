@@ -11,8 +11,6 @@
 |
 */
 
-use App\Http\Controllers\PostController;
-
 Route::get('/', static function () {
 
     return redirect(route('home'));
@@ -37,7 +35,7 @@ Route::post(
 );
 
 //Post
-Route::get('/','PostController@index');
+Route::get('/posts','PostController@index');
 
 
 // Для пробных испытаний
