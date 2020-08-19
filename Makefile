@@ -1,5 +1,7 @@
-
-
+lr-echo-serv-start:
+	laravel-echo-server start
+lr-echo-serv-stop:
+	laravel-echo-server stop
 
 serve-run:
 	php artisan serv

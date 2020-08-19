@@ -8,7 +8,9 @@
 </p>
 
 ## [Laravel Echo Server](https://github.com/tlaverdure/laravel-echo-server)
-
+    
+    sudo npm install -g laravel-echo-server
+    
 конфигурационный файл laravel-echo-server.json 
         
        $ laravel-echo-server start

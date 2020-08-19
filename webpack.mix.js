@@ -16,4 +16,6 @@ mix
     .setResourceRoot('build')
     .js('resources/assets/js/app.js', 'js')
     .sass('resources/assets/sass/app.scss', 'css')
+    .js('node_modules/popper.js/dist/popper.js', 'js')
+    .sourceMaps()
     .version();
