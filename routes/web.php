@@ -29,8 +29,10 @@ Route::view('/chat', 'chat.chat-index')->name('chat');
 //Todo: Переписать код маршрута '/messages' в Chat/MessageController
 Route::post(
     '/messages',
-    function (Request $request) {
-        \App\Events\Message::dispatch($request->input('body'));
+    function (\Illuminate\Http\Request $request) {
+
+//        \App\Events\Message::dispatch($request->input('body'));
+        \App\Events\Message::dispatch($request->all('body'));
     }
 );
 

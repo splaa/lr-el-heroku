@@ -23,22 +23,16 @@ export default {
     console.log('Created hello');
   },
   mounted() {
-    console.log('Component mounted.');
     window.Echo.channel('chat')
         .listen('Message', ({message}) => {
-          this.messages.push(message)
+          this.messages.push(message.body)
         })
   },
   methods: {
     sendMessage() {
-      axios.get('https://dka-develop.ru/api?type=city').then((response) => {
-        console.log(response);
-
-      });
-      // axios.post('/messages', {"body": this.textMessage});
-      //
-      // this.messages.push(this.textMessage);
-      // this.textMessage = '';
+      axios.post('/messages',{body: this.textMessage});
+      this.messages.push(this.textMessage);
+      this.textMessage = '';
     }
 
   }
